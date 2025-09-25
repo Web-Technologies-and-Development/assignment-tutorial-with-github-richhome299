@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Semantic Site — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #8186ea;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #004080;
+      color: rgb(91, 124, 244);
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    footer small {
+      font-size: 0.9em;
+    }
+
+    a:focus {
+      outline: 2px solid #004080;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main">Skip to main content</a>
+
+  <header>
+    <h1>Home</h1>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="pages/misc.html">Miscellaneous</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>Welcome to the Future of WebTech!</h2>
+      <p>This site demonstrates clean HTML5 structure, accessibility features, and proper form handling.</p>
+      <img src="assets/img/welcome.jpg" alt="WebTech Network" />
+    </section>
+
+    <section>
+      <h2>Why Semantic HTML Matters</h2>
+      <p>Semantic elements like <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code> help screen readers and search engines understand your content better.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Rikkard2099</small>
+  </footer>
+</body>
+</html>

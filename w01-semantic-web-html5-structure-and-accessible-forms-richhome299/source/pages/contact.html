@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Semantic Site — Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #e29a9a;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #004080;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      background-color: rgb(202, 118, 118);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 2em;
+      border-radius: 8px;
+    }
+
+    form div, fieldset {
+      margin-bottom: 1em;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      border: 1px solid #384b89;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a41162;
+    }
+
+    a:focus {
+      outline: 2px solid #46096e;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main">Skip to main content</a>
+
+  <header>
+    <h1>Contact</h1>
+    <nav aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="misc.html" aria-current="page">Miscellaneous</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <img src="../assets/img/contact.jpg" alt="Contact support team illustration" />
+
+    <form>
+      <div>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+
+      <div>
+        <label for="email">Email <small>(we'll never share it)</small></label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <fieldset>
+        <legend>Topic</legend>
+        <label><input type="radio" name="topic" value="general" required /> General</label>
+        <label><input type="radio" name="topic" value="support" /> Support</label>
+      </fieldset>
+
+      <div>
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" required></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <small>© 2025 Rikkard2099</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Semantic Site — Miscellaneous</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #ffffff;
+    }
+
+    header, footer {
+      background-color: #55799d;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #d28e10;
+    }
+
+    footer small {
+      font-size: 0.9em;
+    }
+
+    a:focus {
+      outline: 2px solid #004080;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main">Skip to main content</a>
+
+  <header>
+    <h1>Miscellaneous</h1>
+    <nav aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="misc.html" aria-current="page">Miscellaneous</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>What da dawg doin</h2>
+      <p>What da dawg doin.</p>
+      <img src="../assets/img/dawg.jpg.jpg" alt="Dawg" />
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Rikkard2099</small>
+  </footer>
+</body>
+</html>
